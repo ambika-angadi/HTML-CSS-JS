@@ -1,0 +1,312 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    background-image: url("assets/the-halal-design-studio-ZcldgIphJlw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    /*padding: 5px 5%;*/
+    padding: 1px 10%;
+    /*margin-bottom: 0;*/
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    /*border-radius: 60%;*/
+}
+.container nav .logo ul li{
+    position: fixed;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: darkblue;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top: 20px;
+    text-shadow: 5px 5px 5px lightblue;
+    margin-left: 15%;
+}
+.header-text p{
+    /*text-shadow: 2px 2px 2px lightcoral;*/
+    margin-left: 15%;
+}
+.message {
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 18px;
+    text-shadow: none;
+}
+.message span {
+    color: lightcoral;
+    font-size: 25px;
+}
+.header-text h1 span{
+    color: lightcoral;
+}
+.nav-bar {
+    /*border: 2px solid lightcoral;*/
+    list-style-type: none;
+    background-color: lightblue;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+a:hover {
+    background-color:lightpink;
+ }
+.page-footer {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*position: fixed;*/  
+    bottom: 0; 
+    width: 100%; 
+    padding: 20px; 
+  } 
+  .page-footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .page-footer ul li a {
+    padding: 20px;
+    margin: 50px;
+    font-size: 40px;
+    color: black;
+    margin: 10px; 
+  }
+  
+  .page-footer ul li a:hover {
+    color: blue;
+  }
+/*------------Starters & Drinks--------------------------*/
+.starters{
+    padding: 50px 0;
+    background-image: url("assets/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    /*margin-top: 100px;*/
+}
+.starters-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.starter{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid lightcoral;*/
+}
+.starter img{
+    /*width: 100%;*/
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.starter h3{
+    margin-top: 15px;
+    font-weight: 500;
+    /*margin-bottom: 10px;*/
+    color: black;
+}
+.starter p{
+    color: black;
+}
+.starter:hover img{
+    transform: scale(1.1);
+}
+.starter a {
+    font-size: 30px;
+    color: black;
+}
+.starter a:hover{
+    opacity: 0.7;
+}
+
+/*------------------------Main course--------------------------*/
+.maincourse {
+    padding: 50px 0;
+    background-image: url("assets/rice-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+.maincourse-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.maincoursecard{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid lightcoral;*/
+}
+.maincoursecard img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.maincoursecard h3{
+    margin-top: 15px;
+    font-weight: 500;
+    /*margin-bottom: 10px;*/
+    color: black;
+}
+.maincoursecard p{
+    color: black;
+}
+.maincoursecard:hover img{
+    transform: scale(1.1);
+}
+.maincoursecard a {
+    font-size: 30px;
+    color: black;
+}
+.maincoursecard a:hover{
+    opacity: 0.7;
+}
+
+/*-------------------------------Desserts----------------------------------*/
+.desserts{
+    padding: 50px 0;
+    background-image: url("assets/macaroons.jpg");
+    background-size: cover;
+    background-position: center;
+    /*margin-top: 0;*/
+}
+.desserts-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.dessert{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid lightcoral;*/
+}
+.dessert img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.dessert h3{
+    margin-top: 15px;
+    font-weight: 500;
+    /*margin-bottom: 10px;*/
+    color: black;
+}
+.dessert p{
+    color: black;
+}
+.dessert:hover img{
+    transform: scale(1.1);
+}
+.dessert a {
+    font-size: 30px;
+    color: black;
+}
+.dessert a:hover{
+    opacity: 0.7;
+}
+
+ /*------------------------Favourites page--------------------------*/
+ .favourites{
+    padding: 50px 0;
+    background-image: url("assets/annie-spratt-pKpipZVVEC0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    /*margin-top: 0;*/
+}
+
+/*-------------add styling for display form------------*/
+#add {
+    display: none;
+    background-image: url(assets/macaroons.jpg);
+    color: #000000;
+    border: 1px solid #aaa;
+    position: fixed;
+    width: 500px;
+     height: 400px;
+     left: 40%;
+     top: 30%;
+     box-sizing: border-box;
+     text-align: center;
+     border-radius: 10px;
+    }
+
+/*----------------------favourites page-------------------*/
+.favorites{
+    padding: 50px 0;
+    background-image: url("assets/annie-spratt-pKpipZVVEC0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    /*margin-top: 0;*/
+}
+.favorites-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezeptbuch website</title>
+        <link rel="stylesheet" href="style1.css">
+        <script src="https://kit.fontawesome.com/60456600bd.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="home-id">
+        <div id="header">
+            <div class="container">
+                <nav class="nav-bar">
+                    <img src="assets/logo3.png" class="logo">
+                    <ul>
+                        <li><a href="#home-id">Home</a></li>
+                        <li><a href="#starters-id">Starters & Drinks</a></li>
+                        <li><a href="#maincourse-id">Main course</a></li>
+                        <li><a href="#desserts-id">Desserts</a></li>
+                        <li><a href="#fav-id">Favourites</a></li>
+                        <li><a id="addRecipeLink">Add Recipe</a></li>
+                        <!--<li><a id="addRecipeLink1">Add Recipe</a></li>-->
+                    </ul>
+                </nav>
+            </div>
+             <div class="header-text">
+                <p>Welcome to our Recipes book</p>
+                <h1><i> Explore <span> our Recipes</span><br> Collection....<br></i></h1>
+                <p class="message"> <i>Dear Visitor, this is a platform where you can contribute your<br> recipes. Enjoy hundreds of recipes contributed by other members<br> and please don't forget to contribute your best recipes helping us to<br> grow this community....Also please do rate other members' recipes <br>and encourage us to grow further....Looking forward to your<br><span> yummy contribution!!!!</span></i></p>
+            </div>
+        </div>
+        <div>
+        <footer class="page-footer">
+            <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-at"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+        </footer>
+    </div>
+        <!---------------------Starters & Drinks page----------------------------------->
+        <div class="starters" id="starters-id">
+            <div class="container">
+                <h1 class="sub-title">Here is the Starters variety....</h1>
+                <div class="starters-list" id="starter_list">
+                    <!-- Placeholder item to maintain container structure -->
+                <div class="starter"></div>
+                </div>
+            </div>
+        </div>
+              
+<!--------------------Main course page--------------------->
+        <div class="maincourse" id="maincourse-id">
+            <div class="container">
+                <h1 class="sub-title">Here is the Main course variety....</h1>
+                <div class="maincourse-list" id="maincourse_list">
+                         <!-- Placeholder item to maintain container structure -->
+                <div class="maincoursecard"></div>
+                </div>
+            </div>
+        </div>
+
+    <!--------------------Desserts page------------------>
+    <div class="desserts" id="desserts-id">
+        <div class="container">
+            <h1 class="sub-title">Here is the Desserts variety....</h1>
+            <div class="desserts-list" id="dessert_list">
+            <!-- Placeholder item to maintain container structure -->
+                <div class="dessert"></div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------Favorites Page------------------>
+<div class="favorites" id="fav-id">
+    <div class="container">
+      <h1 class="sub-title">Here is my favorites list....</h1>
+      <ul class="favorites-list" id="favorites_list">
+        <!-- Existing favorite recipe(s) -->
+        <li class="favorite">
+          <!--<img src="assets/Mango-Lassi.jpg" width="200" height="300">
+          <h3>Mango Lassi</h3>
+          <p>Drink made with mango and yoghurt</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>-->
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!-------------------------------Add Recipe and Card------------------------->
+        <div id="add">
+        <div>
+        <h2>Add Recipe Description</h2>
+         
+        <label id="name-lbl">Name :</label><br>
+        <input size="50" type="text" id="name" name="name"><br>
+        <label id="Description">Description: :</label><br>
+        <textarea id="Description_area" rows="3" cols="53"></textarea><br>
+        <label id="Ingredients">Ingredients: :</label><br>
+        <textarea id="Ingredients_area" rows="3" cols="53"></textarea><br>
+        <label id="Method">Method:</label><br>
+        <textarea id="Method_area" rows="3" cols="53"></textarea><br>
+        <label id="Image">Image Source:</label><br>
+        <input size="50" type="text" id="image_src" name="image-src"><br>
+        <label id="category">category:</label><br>
+        <select id="category-op">
+         <option >----------------------</option>
+         <option value="starter" >Starters & Drinks</option>
+         <option value="main">Main course</option>
+         <option value="dessert">Desserts</option>
+        
+        </select><br>
+        <!--<button onclick="viewRecipe()">View Recipe</button>-->
+        
+        <br><button onclick="addRecipe()">Add Recipe Card</button>
+        <input type="reset" value="cancel" onclick="hide()"> 
+
+        <!----<br><button onclick="editRecipe()">Edit Recipe</button>
+        <input type="reset" value="Cancel" onclick="hide()">---->  
+        </div>
+        </div>
+
+    <!---------------------------Recipe Details Modal Page------------------->
+    <!--<button id="openModalButton">Open Modal</button>-->
+
+    <!-- The Modal -->
+    <!--<div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="myForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div id="additionalFields" style="display: none;">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+          </div>
+          <button type="button" id="toggleButton">Toggle Additional Fields</button>
+        </form>
+      </div>
+    </div>-->
+    
+
+
+        <script src="script2.js"></script>
+    </body>
+</html>
